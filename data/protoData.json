@@ -9,7 +9,8 @@
 		"default": 2
 	},
 	"S_ITEMLIST": {
-		"default": 3
+		"default": 4,
+		"95": 3
 	},
 	"S_UPDATE_ACHIEVEMENT_PROGRESS": {
 		"default": 1
@@ -30,19 +31,21 @@
 		"default": 1
 	},
 	"S_SPAWN_NPC": {
-		"default": 11
+		"default": 12,
+		"100": 11
 	},
 	"S_DESPAWN_NPC": {
 		"default": 3
 	},
 	"S_SPAWN_USER": {
-		"default": 15
+		"default": 17,
+		"100": 16
 	},
 	"S_DESPAWN_USER": {
 		"default": 3
 	},
 	"S_SPAWN_DROPITEM": {
-		"default": 8
+		"default": 9
 	},
 	"S_DESPAWN_DROPITEM": {
 		"default": 4
@@ -123,7 +126,8 @@
 		"default": 3
 	},
 	"S_USER_LOCATION": {
-		"default": 5
+		"default": 5,
+		"105": 6
 	},
 	"S_CREATURE_LIFE": {
 		"default": 3
@@ -160,5 +164,41 @@
 	},
 	"S_PARTY_MEMBER_LIST": {
 		"default": 7
+	},
+	"S_DEFEND_SUCCESS": {
+		"default": 3
+	},
+	"S_INSTANT_MOVE": {
+		"default": 3
+	},
+	"S_NOCTAN_VARIATION_INFO": {
+		"default": 1
+	},
+	"S_ITEM_EXPLOSION_RESULT": {
+		"default": 2
+	},
+	"S_START_ACTION_SCRIPT": {
+		"default": 3
+	},
+	"S_LOCKON_YOU": {
+		"default": 1
+	},
+	"S_SPAWN_EVENT_SEED": {
+		"default": 2
+	},
+	"S_UPDATE_EVENT_SEED_STATE": {
+		"default": 4
+	},
+	"S_RESULT_EVENT_SEED": {
+		"default": 2
+	},
+	"S_DESPAWN_EVENT_SEED": {
+		"default": 1
+	},
+	"S_SPAWN_BUILD_OBJECT": {
+		"default": 2
+	},
+	"S_DESPAWN_BUILD_OBJECT": {
+		"default": 2
 	}
 }

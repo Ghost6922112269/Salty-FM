@@ -25,6 +25,7 @@ const msg = {
 };
 
 const units = [
+	["log", require("./lib/unitLog")],
 	["proto", require("./lib/unitProto")],
 	["data", require("./lib/unitState")],
 	["tracker", require("./lib/unitTracker")],
@@ -37,21 +38,19 @@ class FpsManager {
 		/** 
 		* @type {deps}
 		*/
+
 		let deps = { "mod": mod };
 
-		console.log("DEBUG: FpsManager -> constructor");
-
 		//check compatibility (only warning atm)
-		if (mod.proxyAuthor !== "caali")
-			mod.error(msg.runtimeWarning);
-		else if (mod.proxyAuthor === "caali" && !mod.clientInterface)
+		if (mod.isProxyCompat)
 			mod.error(msg.proxyWarning);
 		// eslint-disable-next-line node/no-missing-require
 		else if (!require("tera-data-parser").types)
 			mod.error(msg.runtimeOld);
 
 		mod.game.initialize("me");
-
+		mod.game.initialize("party");
+		
 		units.forEach(unit => {
 			// eslint-disable-next-line no-magic-numbers
 			deps[unit[0]] = new unit[1](deps);

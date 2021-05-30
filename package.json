@@ -8,19 +8,17 @@
   },
   "scripts": {
     "lint": "npx eslint '**/*.js' --fix",
-    "version": "auto-changelog --package && git add CHANGELOG.md",
     "manifest": "node ./.manifest.js"
   },
   "author": "SaltyMonkey",
   "license": "MIT",
   "devDependencies": {
-    "auto-changelog": "^1.16.2",
-    "babel-eslint": "^10.0.3",
-    "eslint": "^6.8.0",
-    "eslint-plugin-node": "^11.0.0"
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.19.0",
+    "eslint-plugin-node": "^11.1.0"
   },
   "dependencies": {
-    "rfdc": "^1.1.4",
-    "string-similarity": "^4.0.1"
+    "rfdc": "^1.2.0",
+    "string-similarity": "^4.0.4"
   }
 }

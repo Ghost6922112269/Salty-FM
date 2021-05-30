@@ -1,15 +1,17 @@
 "use strict";
 
 const DefaultSettings = {
-	"interactive": false,
 	"registerCommands": true,
-	"customCommandsTag": "",
-	"registerUI": false,
-	"registerFastAccessUI": false,
+	"fpsUtilsCommandsPrefix": false,
+	"registerUI": true,
+	"registerUIShortcut": false,
+	"UIShortcut": "",
+	"simplifiedMode": false,
+	"interactive": true,
+	"cleanChat": false,
 	"debugMode": false,
 	"classBasedPresets": true,
-	"enableEvents": false,
-	"trackPresetsChanges": false
+	"enableEvents": false
 };
 
 module.exports = function MigrateSettings(from_ver, to_ver, settings) {
